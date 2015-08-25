@@ -26,4 +26,14 @@
     return self.height * self.width * self.depth;
 }
 
+- (float)volumeComparison:(Box *)otherBox {
+    float volumeRatio = [self volume]/[otherBox volume];
+    if ([self volume] > [otherBox volume]) {
+        return volumeRatio;
+    }
+    else {
+        return 1/volumeRatio;
+    }
+}
+
 @end

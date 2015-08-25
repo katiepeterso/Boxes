@@ -18,4 +18,6 @@
 
 - (float)volume;
 
+- (float)volumeComparison:(Box *)otherBox;
+
 @end
